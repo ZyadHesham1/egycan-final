@@ -1,0 +1,19 @@
+<!-- product-details.ejs -->
+<div class="product-details">
+    <% details = {
+        "Description": "Product description",
+        "Features": "Product features",
+        "Shape": "",
+        "Outside Print": "Printed design",
+        "Inside Coat": "",
+        "Available Sizes": "S, M, L",
+        "Standard Application": "Indoor use",
+        "Cap Style": "Snapback"
+    } %>
+
+    <% for (const [key, value] of Object.entries(details)) { %>
+        <% if (value) { %>
+            <p><strong><%= key %>:</strong> <%= value %></p>
+        <% } %>
+    <% } %>
+</div>

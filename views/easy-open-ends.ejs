@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('partials/head') %>
+
+    <style>
+
+    </style>
+    
+</head>
+<body>
+    <%- include('partials/navbar') %>
+
+    <br><br>
+    <section class="py-5 container-fluid">
+            <div class="container">
+
+            <%- include('partials/singleprod') %> </div>
+        </div>
+    </section>
+
+    <%- include('partials/footer') %>
+    <script>
+        function currentSlide(index) {
+            var carousel = document.getElementById('productCarousel');
+            carousel.querySelector('.active').classList.remove('active');
+            carousel.querySelectorAll('.carousel-item')[index - 1].classList.add('active');
+        }
+    </script>
+</body>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

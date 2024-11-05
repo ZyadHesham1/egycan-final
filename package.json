@@ -1,0 +1,20 @@
+{
+  "name": "egycan",
+  "version": "1.0.0",
+  "description": "This is the official repo for the development of EgyCan's website. Find the live development [version here.](https://zyadhesham1.github.io/EgyCan/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "nodemon": "^3.1.4"
+  }
+}

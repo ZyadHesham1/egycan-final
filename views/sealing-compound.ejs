@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('partials/head') %>
+    
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <br><br>
+    <section class="py-5 container-fluid mt-130">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="product-title">Sealing Compound</div>
+                    <div class="product-details">
+                        <p><strong>Water-based Sealing Compound:</strong> <br>Bevrage Cans <br> Food Cans <br>Aerosol Cans
+                            <br>General Liner Packaging
+                            <br>Collapsible tubes
+                           <br> Drums
+                            <br>Composite Cans</p>
+                        <p><strong>PU Foam:</strong> General Line Packaging <br>Food Packaging</p>
+                        <p><strong>Hot Melt:</strong> Plastic Caps</p>
+
+                    </div>
+                </div>
+            
+                <div class="col-md-6 ml-2 max-xy">
+                    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/sealing1.jpg" class="d-block w-100" alt="Sealing Compound Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/sealing2.jpg" class="d-block w-100" alt="Sealing Compound Image">
+                            </div>
+                            <!-- <div class="carousel-item">
+                                <img src="img/logo_with-url.jpeg" class="d-block w-100" alt="Product Image 3">
+                            </div> -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="gallery-thumbnails">
+                        <div class="gallery-thumbnail" onclick="currentSlide(1)">
+                            <img src="img/sealing1.jpg" alt="Sealing Compound Image">
+                        </div>
+                        <div class="gallery-thumbnail" onclick="currentSlide(2)">
+                            <img src="img/sealing2.jpg" alt="Sealing Compound Image">
+                        </div>
+                        <!-- <div class="gallery-thumbnail" onclick="currentSlide(3)">
+                            <img src="img/logo_with-url.jpeg" alt="Thumbnail 3">
+                        </div> -->
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function currentSlide(index) {
+            var carousel = document.getElementById('productCarousel');
+            carousel.querySelector('.active').classList.remove('active');
+            carousel.querySelectorAll('.carousel-item')[index - 1].classList.add('active');
+        }
+    </script>
+        <%- include('partials/footer') %>
+</body>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
